@@ -179,7 +179,7 @@
     .projects {
       display: grid;
       gap: 2rem;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(2, 1fr);
     }
 
     .project-card {
@@ -205,10 +205,15 @@
       width: 100%;
       height: 310px;
       object-fit: cover;
+      object-position: top;
     }
 
     .project-card .project-content {
       padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
     }
 
     .project-card .project-content h4 {
@@ -387,19 +392,31 @@
   <section id="portfolio" class="portfolio">
     <h3>Portfolio Projects</h3>
     <div class="projects">
+      <a href="https://github.com/KacperLudwiczak/Coursestore-App-E-commerce-Project" target="_blank" class="project-link">
+        <div class="project-card">
+          <img src="photo/Coursestore App.png" alt="Project One Photo">
+          <div class="project-content">
+            <h4>Coursestore 🎓</h4>
+            <p>This is a comprehensive web application designed for purchasing courses online, built using React.js for the frontend and ASP.NET Core for the backend. 
+              The application leverages SQL Lite to store user and courses data, while Material UI ensures a responsive and visually appealing user interface. 
+              Additionally, Stripe Service is integrated to facilitate secure and efficient payment processing.</p>
+          </div>
+        </div>
+      </a>
       <a href="https://github.com/KacperLudwiczak/Bookstore-E-commerce-App-Angular-ASPNET" target="_blank" class="project-link">
         <div class="project-card">
-          <img src="photo/Bookstore App.png" alt="Project One Photo">
+          <img src="photo/Bookstore App.png" alt="Project Two Photo">
           <div class="project-content">
             <h4>Bookstore 📚</h4>
-            <p>This is a comprehensive web application designed for purchasing books online, built using Angular for the frontend and ASP.NET for the backend. 
-              The application leverages Stripe Service to integrated to facilitate secure and efficient payment processing.</p>
+            <p>This is a comprehensive web application designed for purchasing books online, built using Angular for the frontend and ASP.NET Core for the backend. 
+              The application leverages SQL Server to store user and book data, while Material Angular ensures a responsive and visually appealing user interface. 
+              Additionally, Stripe Service is integrated to facilitate secure and efficient payment processing.</p>
           </div>
         </div>
       </a>
       <a href="https://github.com/KacperLudwiczak/Event-Booking-App-React-ASPNET" target="_blank" class="project-link">
         <div class="project-card">
-          <img src="photo/Event Booking App.png" alt="Project Two Photo">
+          <img src="photo/Event Booking App.png" alt="Project Three Photo">
           <div class="project-content">
             <h4>Event Booking 🎉</h4>
             <p>Event Booking is a full-featured web application designed to provide an interactive dashboard for managing and participating in activities and events. 
@@ -409,7 +426,7 @@
       </a>
       <a href="https://github.com/KacperLudwiczak/DatingApp-Angular-ASPNET" target="_blank" class="project-link">
         <div class="project-card">
-          <img src="photo/Dating App.png" alt="Project Three Photo">
+          <img src="photo/Dating App.png" alt="Project Four Photo">
           <div class="project-content">
             <h4>Dating App 👩🏻‍❤️‍💋‍👨🏻</h4>
             <p>This is a web application designed for dating, built using Angular for the frontend and ASP.NET Core for the backend. 
