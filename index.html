@@ -179,7 +179,8 @@
     .projects {
       display: grid;
       gap: 2rem;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+      justify-items: center;
     }
 
     .project-card {
@@ -403,9 +404,20 @@
           </div>
         </div>
       </a>
+      <a href="https://github.com/KacperLudwiczak/Literature-Auctions-App-Project" target="_blank" class="project-link">
+        <div class="project-card">
+          <img src="photo/Literature Auctions App.png" alt="Project Two Photo">
+          <div class="project-content">
+            <h4>Literature Auctions 📜</h4>
+            <p>Literature Auctions is a microservices-based web application designed to enable real-time online auctions for literature and books. 
+              The system empowers users to search, bid, and receive notifications about rare books, manuscripts, and other literary works. 
+              Built using a combination of modern technologies like ASP.NET Core, Next.js, and RabbitMQ, the app delivers a scalable, event-driven experience for both buyers and sellers.</p>
+          </div>
+        </div>
+      </a>
       <a href="https://github.com/KacperLudwiczak/Bookstore-E-commerce-App-Angular-ASPNET" target="_blank" class="project-link">
         <div class="project-card">
-          <img src="photo/Bookstore App.png" alt="Project Two Photo">
+          <img src="photo/Bookstore App.png" alt="Project Three Photo">
           <div class="project-content">
             <h4>Bookstore 📚</h4>
             <p>This is a comprehensive web application designed for purchasing books online, built using Angular for the frontend and ASP.NET Core for the backend. 
@@ -416,7 +428,7 @@
       </a>
       <a href="https://github.com/KacperLudwiczak/Event-Booking-App-React-ASPNET" target="_blank" class="project-link">
         <div class="project-card">
-          <img src="photo/Event Booking App.png" alt="Project Three Photo">
+          <img src="photo/Event Booking App.png" alt="Project Four Photo">
           <div class="project-content">
             <h4>Event Booking 🎉</h4>
             <p>Event Booking is a full-featured web application designed to provide an interactive dashboard for managing and participating in activities and events. 
@@ -426,7 +438,7 @@
       </a>
       <a href="https://github.com/KacperLudwiczak/DatingApp-Angular-ASPNET" target="_blank" class="project-link">
         <div class="project-card">
-          <img src="photo/Dating App.png" alt="Project Four Photo">
+          <img src="photo/Dating App.png" alt="Project Five Photo">
           <div class="project-content">
             <h4>Dating App 👩🏻‍❤️‍💋‍👨🏻</h4>
             <p>This is a web application designed for dating, built using Angular for the frontend and ASP.NET Core for the backend. 
